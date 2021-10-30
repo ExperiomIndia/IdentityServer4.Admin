@@ -8,11 +8,15 @@
         public string GitHubCallbackPath { get; set; }
 
         public bool UseAzureAdProvider { get; set; }
+        public bool UseGoogle { get; set; }
         public string AzureAdClientId { get; set; }
         public string AzureAdSecret { get; set; }
         public string AzureAdTenantId { get; set; }
         public string AzureInstance { get; set; }
         public string AzureAdCallbackPath { get; set; }
         public string AzureDomain { get; set; }
+        public string GoogleClientID { get; set; }
+        public string GoogleClientSecret { get; set; }
+        public string GoogleCallbackPath { get; set; }
     }
 }

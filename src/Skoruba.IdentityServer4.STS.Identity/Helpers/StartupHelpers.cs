@@ -383,6 +383,16 @@ namespace Skoruba.IdentityServer4.STS.Identity.Helpers
                     options.CallbackPath = externalProviderConfiguration.AzureAdCallbackPath;
                 });
             }
+
+            if (externalProviderConfiguration.UseGoogle)
+            {
+                authenticationBuilder.AddOpenIdConnect(options =>
+                {
+                    options.ClientSecret = externalProviderConfiguration.GoogleClientID;
+                    options.ClientId = externalProviderConfiguration.GoogleClientSecret;
+                    options.CallbackPath = externalProviderConfiguration.GoogleCallbackPath;
+                });
+            }
         }
 
         /// <summary>
