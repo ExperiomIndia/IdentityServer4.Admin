@@ -386,7 +386,7 @@ namespace Skoruba.IdentityServer4.STS.Identity.Helpers
 
             if (externalProviderConfiguration.UseGoogle)
             {
-                authenticationBuilder.AddOpenIdConnect(options =>
+                authenticationBuilder.AddGoogle(options =>
                 {
                     options.ClientSecret = externalProviderConfiguration.GoogleClientID;
                     options.ClientId = externalProviderConfiguration.GoogleClientSecret;
