@@ -388,8 +388,8 @@ namespace Skoruba.IdentityServer4.STS.Identity.Helpers
             {
                 authenticationBuilder.AddGoogle(options =>
                 {
-                    options.ClientSecret = externalProviderConfiguration.GoogleClientID;
-                    options.ClientId = externalProviderConfiguration.GoogleClientSecret;
+                    options.ClientId = externalProviderConfiguration.GoogleClientID;
+                    options.ClientSecret = externalProviderConfiguration.GoogleClientSecret;
                     options.CallbackPath = externalProviderConfiguration.GoogleCallbackPath;
                 });
             }
